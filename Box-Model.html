@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0px;
+      }
+      h1 {
+        background-color: yellow;
+        color: rgb(253, 253, 253);
+        width: 500px;
+        text-align: center;
+        font-variant: small-caps;
+      }
+      img {
+        display: block;
+        width: 500px;
+      }
+      div {
+        border: 2px solid yellow;
+        width: 500px;
+        /* margin-top: 5px; */
+        padding: 40px;
+        text-align: center;
+        background-color: orangered;
+        /* opacity: 0.5; */
+        font-size: 3rem;
+        color: white;
+      }
+      a {
+        font-family: "Courier New", Courier, monospace;
+        margin: 5px;
+        font-size: 5rem;
+      }
+      a:link{
+        text-decoration: none;
+        color: rgb(211, 64, 64);
+      }
+      a:visited {
+        color: rgb(255, 153, 0);
+      }
+      a:hover {
+        text-decoration: underline;
+        color: brown;
+        font-style: italic ;
+      }
+      a:active {
+        color: chartreuse;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>BOX MODEL</h1>
+    <img src="bg1.avif" />
+    <div>Box Model</div>
+    <a href="font.html" title="Takes you to Font Tyoes">FONT TYPES</a>
+  </body>
+</html>

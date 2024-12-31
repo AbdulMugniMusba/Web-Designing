@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positioning</title>
+    <style>
+      * {
+        margin: 0%;
+      }
+      .Static {
+        position: static;
+        background-color: aqua;
+        height: 100px;
+        width: 300px;
+      }
+      .Rilative {
+        position: relative;
+        background-color: brown;
+        height: 100px;
+        width: 500px;
+        left: 50px;
+        right: 100px;
+      }
+      .Rilative2 {
+        position: relative;
+        background-color: yellow;
+        height: 200px;
+        width: 300px;
+      }
+      .Absolute {
+        position: absolute;
+        background-color: green;
+        height: 100px;
+        width: 200px;
+      }
+      .Sticky {
+        background-color: cadetblue;
+        width: 100%;
+        position: sticky;
+      }
+      .last {
+        padding-bottom: 2000px;
+      }
+      .fixed {
+        background-color: chartreuse;
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+      }
+      .amm {
+        padding-bottom: 2000px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Position</h1>
+    <ul>
+      <li>STATIC</li>
+      <li>RILATIVE</li>
+      <li>ABSOLUTE</li>
+      <li>FIXED</li>
+      <li>STICKY</li>
+    </ul>
+
+    <div class="Static">Static</div>
+
+    <div class="Rilative">Rilative</div>
+
+    <div class="Rilative2">
+      <div class="Absolute">Absolute</div>
+    </div>
+
+    <div class="Sticky">Sticky</div>
+    <p class="last">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+      libero dolorum cum voluptas illum amet excepturi repellat rem debitis
+      quos, necessitatibus eaque. Atque laudantium nulla accusamus consequuntur
+      exercitationem eaque qui!Lorem Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Suscipit nesciunt in eligendi perferendis hic illo, amet
+      quidem optio nihil, maxime nobis numquam exercitationem accusantium ipsam
+      dolorem tempora quae reiciendis modi!
+    </p>
+
+    <div class="fixed">Fixed</div>
+    <p class="amm">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repellat
+      repellendus veniam, nesciunt maiores consectetur, ducimus soluta sed
+      impedit nobis aperiam perferendis voluptatum ab dicta quidem totam? Odio,
+      cupiditate sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Consectetur perferendis doloribus nesciunt labore aut vero cumque dolorem
+      assumenda eligendi omnis? Quos nihil nam, nostrum architecto dolore
+      repudiandae officia veritatis harum! Lorem ipsum dolor sit amet,
+      consectetur adipisicing elit. Praesentium illum, voluptatum eum magni
+      accusantium perspiciatis, alias doloribus minus pariatur sapiente impedit
+      enim nobis non odit odio! Veniam aliquam necessitatibus ipsam.
+    </p>
+  </body>
+</html>

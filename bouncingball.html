@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOUNCING BALL</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+        .ball{
+            width: 50px;
+            height: 50px;
+            background-color: aqua;
+            border-radius: 50%;
+            position: relative;
+            left:50%;
+            top:0%;
+            animation: bounce3 2s infinite ease-in-out;
+            transform: translateX(-50%);
+
+
+        }.ball2{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 50%;
+            position: relative;
+            left:50%;
+            top:0%;
+            animation: bounce2 2s infinite ease-in-out;
+            transform: translateX(-50%);
+
+
+        }
+        .ball3{
+            width: 50px;
+            height: 50px;
+            background-color: green;
+            border-radius: 50%;
+            position: relative;
+            left:50%;
+            top:0%;
+            animation: bounce1 2s infinite ease-in-out;
+            transform: translateX(-50%);
+
+
+        }
+        @keyframes bounce1{
+            0%, 100%{
+                top:0px;
+                
+                
+            }
+            50%{
+                left:20%;
+                top:200px;
+                
+            }
+        }
+       
+        @keyframes bounce3{
+            0%, 100%{
+                top:0px;
+                
+                
+            }
+            50%{
+                left:20%;
+                top:200px;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ball"></div>
+    <div class="ball2"></div>
+    <div class="ball3"></div>
+</body>
+</html>

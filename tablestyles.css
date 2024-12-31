@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1,
+h2 {
+  color: chocolate;
+  font-style: italic;
+}
+table,
+td,
+th {
+  border: 1px solid chocolate;
+  border-collapse: collapse;
+  padding: 10px;
+  text-align: center;
+  
+}
+
+tr:nth-child(even) {
+  background-color: rgb(244, 191, 126);
+}
+tr:nth-child(odd) {
+  background-color: bisque;
+}
+.headerbg {
+  background-color: chocolate !important;
+}
+.whitelg {
+  color: white;
+  font-size: 18px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.rotate90 {
+  transform: rotate(45deg);
+}
+.topToBottom {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-weight: bold;
+  background-color: chocolate !important;
+}

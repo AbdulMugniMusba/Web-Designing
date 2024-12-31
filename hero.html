@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HERO</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .hero{
+            position: relative;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            overflow: hidden;
+
+
+        }
+        .hero::before{
+            content: "";
+            position: absolute;
+            top: O;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url(hero.jpeg)no-repeat center center/cover;
+            filter: blur(2px);
+            z-index: -1;
+        }
+        .hero-content{
+            z-index: 1;
+            max-width: 800px;
+            padding: 20px;
+
+        }
+        .hero h1{
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        .hero p{
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+        .hero a{
+            margin-top: 20px;
+            display: inline-block;
+            background:plum;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .hero a:hover{
+            background: palevioletred;
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>WELCOME </h1>
+            <p>If there is a paradise on earth, it is this, it is this, it is this.</p>
+            <a href="#learn-More">KASHMIR</a>
+
+        </div>
+
+    </section>
+</body>
+</html>

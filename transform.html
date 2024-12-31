@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform And Transition</title>
+    <style>
+      button {
+        background-color: aqua;
+        color: aliceblue;
+        font-weight: bold;
+        border: none;
+        padding: 5px 7px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.7s, background-color 0.7s;
+      }
+      button:hover {
+        background-color: rgba(156, 156, 241, 0.886);
+        transform: scale(1.1) skew(10deg) rotate(10deg) translateY(-10px);
+        /* skew(40deg); *; 
+        /* scale(1.1); */
+        /* rotate(20deg); */
+        /* translateY(-10px); */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Transform And Transition</h1>
+    <button>Mugni</button>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+    <script>
+        function switchOnn(){
+            let BulbImg = document.getElementById('BulbImg');
+            BulbImg.src = "bulbonn.jpg";
+        } function switchOff(){
+            let BulbImg = document.getElementById('BulbImg');
+            BulbImg.src = "bulboff.jpg";
+        }
+     function toggleoffonn(){
+            let BulbImg = document.getElementById('BulbImg');
+           if(BulbImg.src.includes("bulboff.jpg")){
+            BulbImg.src="bulbonn.jpg";
+           }
+           else{
+            BulbImg.src="bulboff.jpg";
+
+           }
+     }
+
+    </script>
+</head>
+<body>
+    <h1>Image Changing Functions</h1>
+    <img Id="BulbImg" src="bulboff.jpg" alt="" width="250px" height="250px">
+    <div>
+        <button onclick="switchOnn()">
+            Bulb-Onn
+        </button>
+        <button onclick="switchOff()">
+            Bulb-Off
+        </button>
+        <button onclick="toggleoffonn()">
+            Toggle
+        </button>
+    </div>
+</body>
+</html>

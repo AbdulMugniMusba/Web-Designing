@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show/Hide</title>
+    <style>
+        #para1{
+            /* Hides Para  */
+            display: none;
+        }
+
+    </style>
+    <script>
+        function Show(){
+            let para1= document.getElementById('para1')
+            para1.style.display='block'; //show element
+        }
+        function Hide(){
+            let para1= document.getElementById('para1')
+            para1.style.display='none';
+        }
+        function ToggleText(){
+            let para1= document.getElementById('para1')
+           if( para1.style.display=='none'){
+           para1.style.display='block';
+           }
+           else{
+            para1.style.display='none';
+           }
+        }
+
+    </script>
+</head>
+<body>
+    <h1>What can JAVA SCRIPT do?</h1>
+    <h1>JAVA SCRIPT can show hidden HTML elements.</h1>
+    <button onclick="Show()">
+        Show
+    </button>
+    <button onclick="Hide()">
+        Hide
+    </button>
+    <button onclick="ToggleText()">
+        Show/hide
+    </button>
+    <p id="para1">Hello java Script</p>
+</body>
+</html>
